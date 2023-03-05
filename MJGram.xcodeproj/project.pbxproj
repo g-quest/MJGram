@@ -14,6 +14,7 @@
 		1380AB4C29B539EB00B45EEE /* postData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB4B29B539EB00B45EEE /* postData.json */; };
 		1380AB5029B53C0300B45EEE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB4F29B53C0300B45EEE /* ModelData.swift */; };
 		1380AB5229B53CA300B45EEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5129B53CA300B45EEE /* Post.swift */; };
+		1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5429B53FE400B45EEE /* PostDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1380AB4B29B539EB00B45EEE /* postData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = postData.json; sourceTree = "<group>"; };
 		1380AB4F29B53C0300B45EEE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		1380AB5129B53CA300B45EEE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1380AB5429B53FE400B45EEE /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,18 @@
 		1380AB4E29B53BA300B45EEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1380AB5329B53FC600B45EEE /* Posts */,
 				1380AB3D29B52E2400B45EEE /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1380AB5329B53FC600B45EEE /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				1380AB5429B53FE400B45EEE /* PostDetail.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 				1380AB3E29B52E2400B45EEE /* ContentView.swift in Sources */,
 				1380AB3C29B52E2400B45EEE /* MJGramApp.swift in Sources */,
 				1380AB5029B53C0300B45EEE /* ModelData.swift in Sources */,
+				1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */,
 				1380AB5229B53CA300B45EEE /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
