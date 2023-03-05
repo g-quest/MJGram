@@ -15,6 +15,7 @@
 		1380AB5029B53C0300B45EEE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB4F29B53C0300B45EEE /* ModelData.swift */; };
 		1380AB5229B53CA300B45EEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5129B53CA300B45EEE /* Post.swift */; };
 		1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5429B53FE400B45EEE /* PostDetail.swift */; };
+		1380AB5D29B5575800B45EEE /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5C29B5575800B45EEE /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1380AB4F29B53C0300B45EEE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		1380AB5129B53CA300B45EEE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1380AB5429B53FE400B45EEE /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		1380AB5C29B5575800B45EEE /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		1380AB4E29B53BA300B45EEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1380AB5829B547FE00B45EEE /* Helpers */,
 				1380AB5329B53FC600B45EEE /* Posts */,
 				1380AB3D29B52E2400B45EEE /* ContentView.swift */,
 			);
@@ -109,6 +112,14 @@
 				1380AB5429B53FE400B45EEE /* PostDetail.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		1380AB5829B547FE00B45EEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1380AB5C29B5575800B45EEE /* LikeButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				1380AB5029B53C0300B45EEE /* ModelData.swift in Sources */,
 				1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */,
 				1380AB5229B53CA300B45EEE /* Post.swift in Sources */,
+				1380AB5D29B5575800B45EEE /* LikeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

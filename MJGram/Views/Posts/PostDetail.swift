@@ -11,11 +11,42 @@ struct PostDetail: View {
     @EnvironmentObject var modelData: ModelData
     var post: Post
     
-//    var postIndex: Int {
-//        modelData.posts.firstIndex(where: { $0.id == post.id })!
-//     }
+    var postIndex: Int {
+        modelData.posts.firstIndex(where: { $0.id == post.id })!
+     }
+    
     var body: some View {
-        Text(post.name)
+        
+        VStack(alignment: .leading) {
+            HStack() {
+                Image(post.ownerImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 30)
+                    .cornerRadius(50)
+                    .padding(.leading, 10)
+                Text(post.ownerFirstName)
+                    .font(.headline)
+                Spacer()
+            }
+            
+            Rectangle()
+                .aspectRatio(1, contentMode: .fit)
+                .overlay(
+                    Image(post.imageName)
+                        .resizable()
+                        .scaledToFill()
+                )
+                .clipped()
+            
+            Text(post.name)
+                .font(.caption)
+                .padding(.leading, 10)
+            
+            LikeButton(isSet: $modelData.posts[postIndex].isLiked)
+                .padding(.leading, 10)
+                .padding(.top, 1)
+        }
     }
 }
 

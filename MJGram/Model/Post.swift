@@ -12,20 +12,12 @@ import CoreLocation
 struct Post: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var imageName: String
     var tags: [String]
     var ownerUsername: String
     var ownerFirstName: String
     var ownerLastName: String
-    var likes: Int
-    
-    private var imageName: String
-    var image: Image {
-        Image(imageName)
-    }
-    
-    private var ownerImage: String
-    var ownerProfilePic: Image {
-        Image(ownerImage)
-    }
-    
+    var ownerImage: String
+    var isLiked: Bool
+    var likes: Int    
 }
