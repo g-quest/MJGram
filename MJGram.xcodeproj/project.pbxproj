@@ -11,6 +11,7 @@
 		1380AB3E29B52E2400B45EEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB3D29B52E2400B45EEE /* ContentView.swift */; };
 		1380AB4029B52E2500B45EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB3F29B52E2500B45EEE /* Assets.xcassets */; };
 		1380AB4329B52E2500B45EEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */; };
+		1380AB4C29B539EB00B45EEE /* postData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB4B29B539EB00B45EEE /* postData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1380AB3D29B52E2400B45EEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1380AB3F29B52E2500B45EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1380AB4B29B539EB00B45EEE /* postData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = postData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1380AB3B29B52E2400B45EEE /* MJGramApp.swift */,
 				1380AB3D29B52E2400B45EEE /* ContentView.swift */,
+				1380AB4A29B5301100B45EEE /* Resources */,
 				1380AB3F29B52E2500B45EEE /* Assets.xcassets */,
 				1380AB4129B52E2500B45EEE /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1380AB4A29B5301100B45EEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1380AB4B29B539EB00B45EEE /* postData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1380AB4329B52E2500B45EEE /* Preview Assets.xcassets in Resources */,
+				1380AB4C29B539EB00B45EEE /* postData.json in Resources */,
 				1380AB4029B52E2500B45EEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
