@@ -19,25 +19,15 @@ struct PostDetail: View {
         
         VStack(alignment: .leading) {
             HStack() {
-                Image(post.ownerImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 30)
-                    .cornerRadius(50)
-                    .padding(.leading, 10)
+                RoundedImage(name: post.ownerImage, height: 30)
+
                 Text(post.ownerFirstName)
                     .font(.headline)
+                
                 Spacer()
             }
             
-            Rectangle()
-                .aspectRatio(1, contentMode: .fit)
-                .overlay(
-                    Image(post.imageName)
-                        .resizable()
-                        .scaledToFill()
-                )
-                .clipped()
+            SquareImage(name: post.imageName)
             
             Text(post.name)
                 .font(.caption)

@@ -16,12 +16,8 @@ struct ProfileHome: View {
     var body: some View {
         ScrollView {
             VStack {
-                Image(profile.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 100)
-                    .cornerRadius(50)
-                    .padding(.leading, 10)
+                RoundedImage(name: profile.imageName, height: 100)
+                    .padding(.top, 10)
                 
                 Text(profile.firstName).font(.largeTitle)
 
@@ -29,14 +25,7 @@ struct ProfileHome: View {
                 LazyVGrid(columns: columns) {
                     ForEach(modelData.posts) { post in
                         if (post.ownerUsername == profile.username) {
-                            Rectangle()
-                                .aspectRatio(1, contentMode: .fit)
-                                .overlay(
-                                    Image(post.imageName)
-                                        .resizable()
-                                        .scaledToFill()
-                                )
-                                .clipped()
+                            SquareImage(name: post.imageName)
                         }
                     }
                 }

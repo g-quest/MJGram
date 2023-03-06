@@ -19,6 +19,8 @@
 		1380AB5F29B5604100B45EEE /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5E29B5604100B45EEE /* PostList.swift */; };
 		1380AB6229B5670300B45EEE /* ProfileHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6129B5670300B45EEE /* ProfileHome.swift */; };
 		1380AB6429B5680100B45EEE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6329B5680100B45EEE /* Profile.swift */; };
+		1380AB6629B58FEE00B45EEE /* SquareImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6529B58FEE00B45EEE /* SquareImage.swift */; };
+		1380AB6829B5954400B45EEE /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6729B5954400B45EEE /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		1380AB5E29B5604100B45EEE /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		1380AB6129B5670300B45EEE /* ProfileHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHome.swift; sourceTree = "<group>"; };
 		1380AB6329B5680100B45EEE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1380AB6529B58FEE00B45EEE /* SquareImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareImage.swift; sourceTree = "<group>"; };
+		1380AB6729B5954400B45EEE /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				1380AB5C29B5575800B45EEE /* LikeButton.swift */,
+				1380AB6529B58FEE00B45EEE /* SquareImage.swift */,
+				1380AB6729B5954400B45EEE /* RoundedImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 				1380AB5D29B5575800B45EEE /* LikeButton.swift in Sources */,
 				1380AB6229B5670300B45EEE /* ProfileHome.swift in Sources */,
 				1380AB6429B5680100B45EEE /* Profile.swift in Sources */,
+				1380AB6629B58FEE00B45EEE /* SquareImage.swift in Sources */,
+				1380AB6829B5954400B45EEE /* RoundedImage.swift in Sources */,
 				1380AB5F29B5604100B45EEE /* PostList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
