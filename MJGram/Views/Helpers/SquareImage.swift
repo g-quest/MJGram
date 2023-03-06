@@ -27,6 +27,6 @@ struct SquareImage_Previews: PreviewProvider {
     static let modelData = ModelData()
     
     static var previews: some View {
-        SquareImage(name: modelData.posts[0].imageName)
+        SquareImage(name: modelData.posts[4].imageName)
     }
 }

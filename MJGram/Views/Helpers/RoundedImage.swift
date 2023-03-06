@@ -26,6 +26,6 @@ struct RoundedImage_Previews: PreviewProvider {
     static let modelData = ModelData()
     
     static var previews: some View {
-        RoundedImage(name: modelData.posts[0].imageName, height: 50)
+        RoundedImage(name: modelData.posts[2].imageName, height: 50)
     }
 }
