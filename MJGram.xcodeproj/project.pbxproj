@@ -18,6 +18,7 @@
 		1380AB5D29B5575800B45EEE /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5C29B5575800B45EEE /* LikeButton.swift */; };
 		1380AB5F29B5604100B45EEE /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5E29B5604100B45EEE /* PostList.swift */; };
 		1380AB6229B5670300B45EEE /* ProfileHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6129B5670300B45EEE /* ProfileHome.swift */; };
+		1380AB6429B5680100B45EEE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6329B5680100B45EEE /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1380AB5C29B5575800B45EEE /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		1380AB5E29B5604100B45EEE /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		1380AB6129B5670300B45EEE /* ProfileHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHome.swift; sourceTree = "<group>"; };
+		1380AB6329B5680100B45EEE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1380AB4F29B53C0300B45EEE /* ModelData.swift */,
 				1380AB5129B53CA300B45EEE /* Post.swift */,
+				1380AB6329B5680100B45EEE /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,10 +106,10 @@
 		1380AB4E29B53BA300B45EEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1380AB3D29B52E2400B45EEE /* ContentView.swift */,
+				1380AB5329B53FC600B45EEE /* Posts */,
 				1380AB6029B566F000B45EEE /* Profile */,
 				1380AB5829B547FE00B45EEE /* Helpers */,
-				1380AB5329B53FC600B45EEE /* Posts */,
-				1380AB3D29B52E2400B45EEE /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				1380AB5229B53CA300B45EEE /* Post.swift in Sources */,
 				1380AB5D29B5575800B45EEE /* LikeButton.swift in Sources */,
 				1380AB6229B5670300B45EEE /* ProfileHome.swift in Sources */,
+				1380AB6429B5680100B45EEE /* Profile.swift in Sources */,
 				1380AB5F29B5604100B45EEE /* PostList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

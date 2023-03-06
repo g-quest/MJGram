@@ -10,6 +10,8 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var posts: [Post] = load("postData.json")
+    
+    @Published var profile = Profile.default
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

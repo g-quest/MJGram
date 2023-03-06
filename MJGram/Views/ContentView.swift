@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var modelData: ModelData
     @State private var selection: Tab = .photos
     
     enum Tab {
@@ -22,7 +23,8 @@ struct ContentView: View {
                     Label("Photos", systemImage: "photo.stack")
                 }
                 .tag(Tab.photos)
-            ProfileHome()
+            ProfileHome(profile: Profile.default)
+                .environmentObject(modelData)
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
