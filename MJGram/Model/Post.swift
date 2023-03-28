@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Post: Identifiable {
-    let id: Int
+    var id: UUID = UUID()
     var name: String
     var image: Image
     var owner: String

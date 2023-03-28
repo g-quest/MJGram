@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 class MJPostsViewModel: ObservableObject {
     
@@ -40,7 +41,6 @@ class MJPostsViewModel: ObservableObject {
 //            let newPost = Post(image: Image(uiImage: image), description: "Something New", isFavorite: false, author: User.currentUser)
             
             let newPost = Post(
-                id: 10,
                 name: "This is a new MJGram post",
                 image: Image(uiImage: image),
                 owner: self.model.profile.name,

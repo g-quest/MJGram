@@ -77,7 +77,6 @@
 				1380AB4D29B53B9000B45EEE /* Model */,
 				1380AB4E29B53BA300B45EEE /* View */,
 				13F62DD529C99CE300356DB2 /* ViewModel */,
-				13F62DE329D2AB9F00356DB2 /* Helpers */,
 				1380AB3F29B52E2500B45EEE /* Assets.xcassets */,
 				1380AB4129B52E2500B45EEE /* Preview Content */,
 			);
@@ -127,6 +126,8 @@
 			children = (
 				1380AB6529B58FEE00B45EEE /* SquareImage.swift */,
 				1380AB6729B5954400B45EEE /* RoundedImage.swift */,
+				13F62DD729C99DF600356DB2 /* CameraPicker.swift */,
+				13F62DD929C99E2600356DB2 /* ImagePicker.swift */,
 			);
 			path = "Helper Views";
 			sourceTree = "<group>";
@@ -145,15 +146,6 @@
 				13F62DDD29C99F0000356DB2 /* MJPostsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		13F62DE329D2AB9F00356DB2 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				13F62DD729C99DF600356DB2 /* CameraPicker.swift */,
-				13F62DD929C99E2600356DB2 /* ImagePicker.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
