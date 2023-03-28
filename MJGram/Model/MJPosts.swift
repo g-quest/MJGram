@@ -22,8 +22,17 @@ struct MJPosts {
         posts[actualIndex].isLiked.toggle()
     }
 
-    func add(post: Post) {
-        print(post)
+    mutating func add(post: Post) {
+        posts.append(post)
+    }
+    
+    mutating func deletePost(_ post: Post) {
+        let postIndex = posts.firstIndex { p in
+            p.id == post.id
+        }
+        guard let actualIndex = postIndex else {return}
+        
+        posts.remove(at: actualIndex)
     }
     
 }

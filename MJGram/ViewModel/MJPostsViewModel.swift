@@ -58,4 +58,8 @@ class MJPostsViewModel: ObservableObject {
         }
     }
     
+    func deletePostAt(_ post: Post) {
+        model.deletePost(post)
+    }
+    
 }

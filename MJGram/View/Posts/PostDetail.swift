@@ -47,16 +47,19 @@ struct PostDetail: View {
                 
                 Spacer()
                 
-                Button {
-                 print("clicked")
-                } label: {
-                    Label("Delete Post", systemImage: "trash")
-                        .labelStyle(.iconOnly)
-                        .foregroundColor(.red)
+                if (post.ownerUsername == viewModel.mjProfile.username) {
+                    Button {
+                        viewModel.deletePostAt(post)
+                    } label: {
+                        Label("Delete Post", systemImage: "trash")
+                            .labelStyle(.iconOnly)
+                            .foregroundColor(.red)
+                    }
+                    .padding(.trailing, 10)
+                    .padding(.top, 1)
+                    .buttonStyle(.plain)
                 }
-                .padding(.trailing, 10)
-                .padding(.top, 1)
-                .buttonStyle(.plain)
+
             }
         }
     }
