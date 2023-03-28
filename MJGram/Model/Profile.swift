@@ -9,16 +9,12 @@ import Foundation
 import SwiftUI
 
 struct Profile {
-    var firstName: String
-    var lastName: String
-    var username: String
-    var imageName: String
+    var name: String
+    var image: Image
 
     static let `default` = Profile(
-        firstName: "Greg",
-        lastName: "Cuesta",
-        username: "greg",
-        imageName: "greg"
+        name: "Greg",
+        image: Image("greg")
     )
 
 }

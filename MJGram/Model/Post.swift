@@ -5,19 +5,13 @@
 //  Created by GREGORY CUESTA on 3/5/23.
 //
 
-import Foundation
 import SwiftUI
-import CoreLocation
 
-struct Post: Hashable, Codable, Identifiable {
-    var id: Int
+struct Post: Identifiable {
+    let id: Int
     var name: String
-    var imageName: String
-    var tags: [String]
-    var ownerUsername: String
-    var ownerFirstName: String
-    var ownerLastName: String
-    var ownerImage: String
+    var image: Image
+    var owner: String
+    var ownerImage: Image
     var isLiked: Bool
-    var likes: Int    
 }

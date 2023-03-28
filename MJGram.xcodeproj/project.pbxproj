@@ -11,7 +11,6 @@
 		1380AB3E29B52E2400B45EEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB3D29B52E2400B45EEE /* ContentView.swift */; };
 		1380AB4029B52E2500B45EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB3F29B52E2500B45EEE /* Assets.xcassets */; };
 		1380AB4329B52E2500B45EEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */; };
-		1380AB4C29B539EB00B45EEE /* postData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1380AB4B29B539EB00B45EEE /* postData.json */; };
 		1380AB5029B53C0300B45EEE /* MJPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB4F29B53C0300B45EEE /* MJPosts.swift */; };
 		1380AB5229B53CA300B45EEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5129B53CA300B45EEE /* Post.swift */; };
 		1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB5429B53FE400B45EEE /* PostDetail.swift */; };
@@ -22,9 +21,7 @@
 		1380AB6829B5954400B45EEE /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380AB6729B5954400B45EEE /* RoundedImage.swift */; };
 		13F62DD829C99DF600356DB2 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F62DD729C99DF600356DB2 /* CameraPicker.swift */; };
 		13F62DDA29C99E2600356DB2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F62DD929C99E2600356DB2 /* ImagePicker.swift */; };
-		13F62DDC29C99E8400356DB2 /* AspectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F62DDB29C99E8400356DB2 /* AspectImage.swift */; };
 		13F62DDE29C99F0000356DB2 /* MJPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F62DDD29C99F0000356DB2 /* MJPostsViewModel.swift */; };
-		13F62DE529D2B02B00356DB2 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F62DE429D2B02B00356DB2 /* DeleteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +30,6 @@
 		1380AB3D29B52E2400B45EEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1380AB3F29B52E2500B45EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1380AB4B29B539EB00B45EEE /* postData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = postData.json; sourceTree = "<group>"; };
 		1380AB4F29B53C0300B45EEE /* MJPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJPosts.swift; sourceTree = "<group>"; };
 		1380AB5129B53CA300B45EEE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1380AB5429B53FE400B45EEE /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
@@ -44,9 +40,7 @@
 		1380AB6729B5954400B45EEE /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		13F62DD729C99DF600356DB2 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		13F62DD929C99E2600356DB2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		13F62DDB29C99E8400356DB2 /* AspectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectImage.swift; sourceTree = "<group>"; };
 		13F62DDD29C99F0000356DB2 /* MJPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJPostsViewModel.swift; sourceTree = "<group>"; };
-		13F62DE429D2B02B00356DB2 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +78,6 @@
 				1380AB4E29B53BA300B45EEE /* View */,
 				13F62DD529C99CE300356DB2 /* ViewModel */,
 				13F62DE329D2AB9F00356DB2 /* Helpers */,
-				1380AB4A29B5301100B45EEE /* Resources */,
 				1380AB3F29B52E2500B45EEE /* Assets.xcassets */,
 				1380AB4129B52E2500B45EEE /* Preview Content */,
 			);
@@ -97,14 +90,6 @@
 				1380AB4229B52E2500B45EEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1380AB4A29B5301100B45EEE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1380AB4B29B539EB00B45EEE /* postData.json */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		1380AB4D29B53B9000B45EEE /* Model */ = {
@@ -142,8 +127,6 @@
 			children = (
 				1380AB6529B58FEE00B45EEE /* SquareImage.swift */,
 				1380AB6729B5954400B45EEE /* RoundedImage.swift */,
-				13F62DDB29C99E8400356DB2 /* AspectImage.swift */,
-				13F62DE429D2B02B00356DB2 /* DeleteButton.swift */,
 			);
 			path = "Helper Views";
 			sourceTree = "<group>";
@@ -232,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1380AB4329B52E2500B45EEE /* Preview Assets.xcassets in Resources */,
-				1380AB4C29B539EB00B45EEE /* postData.json in Resources */,
 				1380AB4029B52E2500B45EEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +234,8 @@
 				1380AB5529B53FE400B45EEE /* PostDetail.swift in Sources */,
 				13F62DD829C99DF600356DB2 /* CameraPicker.swift in Sources */,
 				1380AB5229B53CA300B45EEE /* Post.swift in Sources */,
-				13F62DDC29C99E8400356DB2 /* AspectImage.swift in Sources */,
 				1380AB6229B5670300B45EEE /* ProfileHome.swift in Sources */,
 				1380AB6429B5680100B45EEE /* Profile.swift in Sources */,
-				13F62DE529D2B02B00356DB2 /* DeleteButton.swift in Sources */,
 				1380AB6629B58FEE00B45EEE /* SquareImage.swift in Sources */,
 				1380AB6829B5954400B45EEE /* RoundedImage.swift in Sources */,
 				1380AB5F29B5604100B45EEE /* PostList.swift in Sources */,

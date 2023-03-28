@@ -42,14 +42,10 @@ class MJPostsViewModel: ObservableObject {
             let newPost = Post(
                 id: 10,
                 name: "This is a new MJGram post",
-                imageName: "addedImage",
-                tags: [],
-                ownerUsername: self.model.profile.username,
-                ownerFirstName: self.model.profile.firstName,
-                ownerLastName: self.model.profile.lastName,
-                ownerImage: self.model.profile.username,
-                isLiked: false,
-                likes: 0
+                image: Image(uiImage: image),
+                owner: self.model.profile.name,
+                ownerImage: Image("greg"),
+                isLiked: false
                 )
 
 
@@ -59,7 +55,7 @@ class MJPostsViewModel: ObservableObject {
     }
     
     func deletePostAt(_ post: Post) {
-        model.deletePost(post)
+        model.delete(post)
     }
     
 }

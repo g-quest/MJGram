@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SquareImage: View {
     
-    var name: String
+    var name: Image
     
     var body: some View {
         Rectangle()
             .aspectRatio(1, contentMode: .fit)
             .overlay(
-                Image(name)
+                name
                     .resizable()
                     .scaledToFill()
             )
@@ -27,6 +27,6 @@ struct SquareImage_Previews: PreviewProvider {
     static let viewModel = MJPostsViewModel()
     
     static var previews: some View {
-        SquareImage(name: viewModel.mjPosts[4].imageName)
+        SquareImage(name: viewModel.mjPosts[4].image)
     }
 }

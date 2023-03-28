@@ -13,16 +13,16 @@ struct ProfileHome: View {
     var body: some View {
         ScrollView {
             VStack {
-                RoundedImage(name: viewModel.mjProfile.imageName, height: 100)
-                    .padding(.top, 10)
+                RoundedImage(name: viewModel.mjProfile.image, height: 100)
+                        .padding(.top, 10)
                 
-                Text(viewModel.mjProfile.firstName).font(.largeTitle)
+                Text(viewModel.mjProfile.name).font(.largeTitle)
 
                 let columns = [GridItem(), GridItem(), GridItem()]
                 LazyVGrid(columns: columns) {
                     ForEach(viewModel.mjPosts) { post in
-                        if (post.ownerUsername == viewModel.mjProfile.username) {
-                            SquareImage(name: post.imageName)
+                        if (post.owner == viewModel.mjProfile.name) {
+                            SquareImage(name: post.image)
                         }
                     }
                 }

@@ -9,11 +9,11 @@ import SwiftUI
 
 struct RoundedImage: View {
     
-    var name: String
+    var name: Image
     var height: CGFloat
     
     var body: some View {
-        Image(name)
+        name
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(height: height)
@@ -26,6 +26,6 @@ struct RoundedImage_Previews: PreviewProvider {
     static let viewModel = MJPostsViewModel()
     
     static var previews: some View {
-        RoundedImage(name: viewModel.mjPosts[2].imageName, height: 50)
+        RoundedImage(name: viewModel.mjPosts[2].image, height: 50)
     }
 }

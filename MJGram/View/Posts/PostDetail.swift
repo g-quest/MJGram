@@ -21,13 +21,13 @@ struct PostDetail: View {
             HStack() {
                 RoundedImage(name: post.ownerImage, height: 30)
 
-                Text(post.ownerFirstName)
+                Text(post.owner)
                     .font(.headline)
                 
                 Spacer()
             }
             
-            SquareImage(name: post.imageName)
+            SquareImage(name: post.image)
             
             Text(post.name)
                 .font(.caption)
@@ -47,7 +47,7 @@ struct PostDetail: View {
                 
                 Spacer()
                 
-                if (post.ownerUsername == viewModel.mjProfile.username) {
+                if (post.owner == viewModel.mjProfile.name) {
                     Button {
                         viewModel.deletePostAt(post)
                     } label: {

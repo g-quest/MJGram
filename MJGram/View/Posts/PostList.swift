@@ -11,6 +11,7 @@ struct PostList: View {
     @EnvironmentObject var viewModel: MJPostsViewModel
     
     var body: some View {
+        
         List {
             ForEach(viewModel.mjPosts) { post in
                 PostDetail(post: post)
