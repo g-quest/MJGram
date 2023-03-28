@@ -23,9 +23,9 @@ struct RoundedImage: View {
 }
 
 struct RoundedImage_Previews: PreviewProvider {
-    static let modelData = ModelData()
+    static let viewModel = MJPostsViewModel()
     
     static var previews: some View {
-        RoundedImage(name: modelData.posts[2].imageName, height: 50)
+        RoundedImage(name: viewModel.mjPosts[2].imageName, height: 50)
     }
 }

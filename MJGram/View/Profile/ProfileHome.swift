@@ -8,23 +8,20 @@
 import SwiftUI
 
 struct ProfileHome: View {
-    @EnvironmentObject var modelData: ModelData
-    
-    var profile: Profile
-
+    @EnvironmentObject var viewModel: MJPostsViewModel
     
     var body: some View {
         ScrollView {
             VStack {
-                RoundedImage(name: profile.imageName, height: 100)
+                RoundedImage(name: viewModel.mjProfile.imageName, height: 100)
                     .padding(.top, 10)
                 
-                Text(profile.firstName).font(.largeTitle)
+                Text(viewModel.mjProfile.firstName).font(.largeTitle)
 
                 let columns = [GridItem(), GridItem(), GridItem()]
                 LazyVGrid(columns: columns) {
-                    ForEach(modelData.posts) { post in
-                        if (post.ownerUsername == profile.username) {
+                    ForEach(viewModel.mjPosts) { post in
+                        if (post.ownerUsername == viewModel.mjProfile.username) {
                             SquareImage(name: post.imageName)
                         }
                     }
@@ -35,8 +32,10 @@ struct ProfileHome: View {
 }
 
 struct ProfileHome_Previews: PreviewProvider {
+    
+    static let viewModel = MJPostsViewModel()
+    
     static var previews: some View {
-        ProfileHome(profile: Profile.default).environmentObject(ModelData())
-
+        ProfileHome().environmentObject(viewModel)
     }
 }

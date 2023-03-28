@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var modelData: ModelData
+    @StateObject var viewModel = MJPostsViewModel()
     @State private var selection: Tab = .photos
     
     enum Tab {
@@ -19,12 +19,13 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             PostList()
+                .environmentObject(viewModel)
                 .tabItem {
                     Label("Photos", systemImage: "photo.stack")
                 }
                 .tag(Tab.photos)
-            ProfileHome(profile: Profile.default)
-                .environmentObject(modelData)
+            ProfileHome()
+                .environmentObject(viewModel)
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
@@ -36,6 +37,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ModelData())
     }
 }

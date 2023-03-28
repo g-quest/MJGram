@@ -6,12 +6,26 @@
 //
 
 import Foundation
-import Combine
+import SwiftUI
 
-final class ModelData: ObservableObject {
-    @Published var posts: [Post] = load("postData.json")
+struct MJPosts {
+    var posts: [Post] = load("postData.json")
     
-    @Published var profile = Profile.default
+    var profile = Profile.default
+    
+    mutating func toggleLiked(_ post: Post) {
+        let postIndex = posts.firstIndex { p in
+            p.id == post.id
+        }
+        guard let actualIndex = postIndex else {return}
+        
+        posts[actualIndex].isLiked.toggle()
+    }
+
+    func add(post: Post) {
+        print(post)
+    }
+    
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

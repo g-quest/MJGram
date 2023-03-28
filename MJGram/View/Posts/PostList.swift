@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PostList: View {
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var viewModel: MJPostsViewModel
     
     var body: some View {
         List {
-            ForEach(modelData.posts) { post in
+            ForEach(viewModel.mjPosts) { post in
                 PostDetail(post: post)
                     .listRowInsets(.init(top: 10,
                                          leading: 0,
@@ -25,8 +25,9 @@ struct PostList: View {
 }
 
 struct PostList_Previews: PreviewProvider {
+    static let viewModel = MJPostsViewModel()
+    
     static var previews: some View {
-        PostList()
-            .environmentObject(ModelData())
+        PostList().environmentObject(viewModel)
     }
 }
